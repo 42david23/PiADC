@@ -69,6 +69,6 @@ while True:
        
     #Umrechnung(Wert)
     einer,zehntL,hundertL,pic_value,value=Umrechnung(Wert)
-    print("%d%d%d V \n") %(einer, hundertL, zehntL)    
+    print("%d,%d%d V \n Original: %d") %(einer, hundertL, zehntL, Wert)    
      
 GPIO.Cleanup()	
