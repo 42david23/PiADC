@@ -30,7 +30,7 @@ def ADein():
         GPIO.output(AD_Clk,GPIO.LOW)
         time.sleep(5/10e6)
 	
-    return result
+    return Wert
 
 def Umrechnung(Wert):
     value=Wert
