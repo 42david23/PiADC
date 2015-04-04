@@ -54,7 +54,7 @@ while True:
        
     #Umrechnung(Wert)
     einer,zehntL,hundertL,pic_value,value=Umrechnung(Wert)
-    print("Original: %d") %(Wert)    
+    print("Volt: %d V , Original: %d") %(Wert * 0.012941176, Wert)    
     time.sleep(1)
      
 GPIO.Cleanup()	

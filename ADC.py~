@@ -30,7 +30,7 @@ def ADein():
         GPIO.output(AD_Clk,GPIO.LOW)
         time.sleep(5/10e6)
 	
-    return Wert
+    return sample
 
 def Umrechnung(Wert):
     value=Wert
@@ -54,7 +54,7 @@ while True:
        
     #Umrechnung(Wert)
     einer,zehntL,hundertL,pic_value,value=Umrechnung(Wert)
-    print("Original: %d") %(Wert)    
+    print("Original: %d") %(Wert * 0.012941176)    
     time.sleep(1)
      
 GPIO.Cleanup()	
