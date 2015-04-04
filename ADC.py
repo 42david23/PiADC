@@ -21,6 +21,7 @@ time.sleep(20/10e6)
 GPIO.output(AD_CS,GPIO.LOW)
 
 def ADein():
+    sample = 0
     for x in range(0,8):
         sample = sample << 1
         sample = sample + GPIO.input(AD_Dat)
